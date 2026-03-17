@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<table>
+				<tr>
+					<th colspan="2">Pizza Shop 2.0</th>
+				</tr>
+				<tr>
+					<td>
+						Name
+					</td>
+					<td>
+						<input type="text" placeholder="enter your name">
+					</td>
+				</tr>
+				<tr>
+					<td>Pizza Topping</td>
+					<td>
+						<input name="topping" type="radio" id="supreme" value="1">
+						<label for="supreme">Supreme</label>
+						<br>
+						<input name="topping" type="radio" id="vegetarian" value="2">
+						<label for="vegetarian">Vegetarian</label>
+						<br>
+						<input name="topping" type="radio" id="hawaiian" value="3" checked>
+						<label for="hawaiian">Hawaiian</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Pizza Sauce</td>
+					<td>
+						<select name="" id="">
+							<option value="">Tomato</option>
+							<option value="">Sour Cream</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Optional Extras</td>
+					<td>
+						<input type="hidden" name="extra_cheese_confirmed" value="0">	
+						<input type="checkbox" name="extra_cheese_confirmed" value="1">
+						<label for="">Extra Cheese</label>
+						<input type="hidden" name="glutten_free_confirmed" value="0">
+						<input type="checkbox" name="glutten_free_confirmed" value="1" checked>
+						<label for="">Glutten Free Base</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Have discount coupon?
+					</td>
+					<td>
+						<input type="file">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Custom size pizza
+					</td>
+					<td>
+						<input type="range" min="1" max="10" value="3">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Delivery Instructions:
+						<br>
+						<textarea name="" id="" cols="80" rows="8"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>other data</td>
+					<td>
+						<input type="text"><br>
+						<input type="text"><br>
+						<input type="button" value="hey im a button"><br>
+						<input type="Reset">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="Send My Order">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>		
+</body>
+</html>

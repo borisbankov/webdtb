@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+.row{
+ 	margin-bottom: 4px;
+ 	/*display:flex;*/
+}
+.box{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	padding-left: 10px;
+	/*margin-right:4px;*/
+}
+.bg-red{
+	background: #b90000;
+}
+.bg-green{
+	background: #4c9c01;
+}
+.bg-blue{
+	background: #0081cc;
+}
+.bg-purple{
+	background: #4902a7;
+}
+.bg-yellow{
+	background: #f3e300;
+}
+.bg-orange{
+	background: #ffa600;
+}
+
+/*ctrl + a -> select all
+ ctrl shift L -> write all
+ home -> go to start of line
+ press to4ka
+ end -> go to end of line
+ press kydrava skobka */

@@ -35,7 +35,13 @@
 		letter-spacing: 0.5px;
 	}
 	.heading{
-
+		color: white;
+		text-align: center;
+		font-family: 'Courier';
+		font-weight: bold;
+		font-size: 17px;
+		box-shadow: 0 0 -1px -1px -1px black;
+		padding: 15px 0px 20px 0px;
 	}
 	
 	.bg-blue{
@@ -53,6 +59,92 @@
 	.bg-orange{
 		background: #f07f30;
 	}
+	.main{
+		background: white;
+		text-align: center;
+		padding-bottom:40px;
+	}
+	.main-title{
+		font-size: 60px;
+		color: #e8301d;
+		margin:0;
+		transform: scaleY(1.5);
+		font-family: 'Lucida Console';
+		padding:25px 0px;
+	}
+	.main-subtitle{
+		margin-top:0;
+		color:#777777;
+	}
+	.main-text{
+		color:#bebebe;
+		line-height: 1.8;
+		font-size:17px;
+		padding:0px 80px;
+	}
+	.row{
+		display: flex;
+	}
+	.col{
+		flex: 0 0 20%;
+		text-align: center;
+		padding:25px 25px 75px 25px;
+	}
+	.col:nth-child(1){
+		background: #a2d6d9;
+	}
+	.col:nth-child(2){
+		background: #f48871;
+	}
+	.col:nth-child(3){
+		background: #b9d694;
+	}
+	.col:nth-child(4){
+		background: #fae17c;
+	}
+	.col:nth-child(5){
+		background: #f6b56b;
+	}
+	.col-badge{
+		width:70px;
+		height:70px;
+		border-radius:30px;
+		display: inline-block;
+		padding-top:8px;
+		box-shadow:0px 1px 1px 1px black;
+		margin-bottom: 20px;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	.text-blue{
+		color:#51a7ac;
+		font-size:20px;
+		text-shadow: 0px 1px 1px black;
+	}
+	.text-red{
+		color:#e8301d;
+		font-size:20px;
+		text-shadow: 0px 1px 1px black;
+	}
+	.text-green{
+		color:#89b453;
+		font-size:20px;
+		text-shadow: 0px 1px 1px black;
+	}
+	.text-yellow{
+		color:#f6c640;
+		font-size:20px;
+		text-shadow: 0px 1px 1px black;
+	}
+	.text-orange{
+		color:#f07f30;
+		font-size:20px;
+		text-shadow: 0px 1px 1px black;
+	}
+	.col-text{
+		color: white;
+	}
 	</style>
 </head>
 <body>
@@ -67,8 +159,71 @@
 					<li class="nav-item"><a href="" class="nav-link bg-orange">Help</a></li>
 				</ul>
 			</div>
+			<div class="main">
+				<h1 class="main-title">HTML AND CSS</h1>
+				<h2 class="main-subtitle"> < CHEET SHEET ></h2>
+				<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis id aliquam voluptatibus reiciendis natus ab facere similique dolores itaque quo tempora consequatur, asperiores a nemo consequuntur vel eos tempore excepturi.dolores itaque quo tempora consequatur, asperiores a nemo consequuntur vel eos tempore excepturi.
+				dolores itaque quo tempora consequatur, asperiores a nemo consequuntur vel eos tempore excepturi.</p>
+			</div>
 			<div class="heading">
 				A TITLE FOR BEGINNERS
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="col-badge bg-blue">
+					<img src="https://static.thenounproject.com/png/89200-200.png" alt="" height="50">
+				</div>
+				<h4 class="text-blue">
+					HTML
+				</h4>
+				<p class="col-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nobis illo voluptatum aperiam rem adipisci, facilis, vel blanditiis totam fugit error accusantium! Numquam, itaque facere omnis cumque perferendis exercitationem repellendus.
+				</p>
+			</div>
+			<div class="col">
+				<div class="col-badge bg-red">
+					<img src="https://static.thenounproject.com/png/3803708-200.png" alt="" height="50">
+				</div>
+				<h4 class="text-red">
+					CSS
+				</h4>
+				<p class="col-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nobis illo voluptatum aperiam rem adipisci, facilis, vel blanditiis totam fugit error accusantium! Numquam, itaque facere omnis cumque perferendis exercitationem repellendus.
+				</p>
+			</div>
+			<div class="col">
+				<div class="col-badge bg-green">
+					<img src="https://static.thenounproject.com/png/3532081-200.png" alt="" height="50">
+				</div>
+				<h4 class="text-green">
+					SNIPPETS
+				</h4>
+				<p class="col-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nobis illo voluptatum aperiam rem adipisci, facilis, vel blanditiis totam fugit error accusantium! Numquam, itaque facere omnis cumque perferendis exercitationem repellendus.
+				</p>
+			</div>
+			<div class="col">
+				<div class="col-badge bg-yellow">
+					<img src="https://static.thenounproject.com/png/3805888-200.png" alt="" height="50">
+				</div>
+				<h4 class="text-yellow">
+					TAGS
+				</h4>
+				<p class="col-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nobis illo voluptatum aperiam rem adipisci, facilis, vel blanditiis totam fugit error accusantium! Numquam, itaque facere omnis cumque perferendis exercitationem repellendus.
+				</p>
+			</div>
+			<div class="col">
+				<div class="col-badge bg-orange">
+					<img src="https://static.thenounproject.com/png/1489354-200.png" alt="" height="50">
+				</div>
+				<h4 class="text-orange">
+					HYPERLINKS
+				</h4>
+				<p class="col-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nobis illo voluptatum aperiam rem adipisci, facilis, vel blanditiis totam fugit error accusantium! Numquam, itaque facere omnis cumque perferendis exercitationem repellendus.
+				</p>
 			</div>
 		</div>
 	</div>

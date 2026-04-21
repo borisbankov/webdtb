@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.typekit.net/zpy8rod.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0px;
+			font-family: myriad-pro, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+		.header{
+			background: #64533f;
+			border-bottom: 12px solid #a56c97;
+		}
+		.container{
+			width: 954px;
+			margin: 0 auto;
+		}
+		.d-flex{
+			display: flex;
+		}
+		.nav{
+			list-style-type: none;
+			padding-left:18px;
+			padding-top:5px;
+			padding-bottom:10px;
+			margin:0px;
+		}
+		.nav-item{
+			margin:10px;
+		}
+		.nav-link{
+			text-decoration: none;
+			color:white;
+		}
+		.bg-gradient{
+			background: rgb(122,107,74);
+			background: linear-gradient(180deg, rgba(122,107,74,1) 0%, rgba(61,55,39,1) 36%, rgba(36,32,23,1) 36%, rgba(36,32,23,1) 100%);
+		}
+
+		.site-img{
+			margin-left:5px;
+			margin-right:10px;
+		}
+		.site-title{
+			color:white;
+			margin:0px;
+			font-weight:500;
+		}
+		.site-intro{
+			padding-top:20px;
+			padding-bottom:28px;
+			align-items:center;
+		}
+		.slider{
+			background: #a56c97;
+			border-radius: 8px;
+			padding-top:10px;
+			padding-bottom:19px;
+			align-items:center;
+		}
+		.left-arrow{
+			margin-left:9px;
+			margin-right:17px;
+		}
+		.left-arrow > a {
+			color:#6e4563;
+			text-decoration: none;
+			font-size:18px;
+		}
+		.main-slide{
+			width:875px;
+		}
+		.right-arrow {
+			margin-right:11px;
+			margin-left:17px;
+		}
+		.right-arrow > a {
+			color:#6e4563;
+			text-decoration: none;
+			font-size:18px;
+		}
+		.slide-title{
+			font-size:30px;
+			color:#ffe6a6;
+			font-weight:500px;
+		}
+		.slide-meta{
+			color:black;
+			font-size:13px;
+			font-weight:900;
+			border-top:solid #6e4563 2px;
+			border-bottom:solid #6e4563 2px;
+			padding-top:2px;
+			padding-bottom:5px;
+		}
+		.slide-text{
+			padding-top:10px;
+			font-family:"Rockwell";
+			color:white;
+		}
+		.articles{
+			margin-top:20px;
+			background: #1f1c17;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<ul class="nav d-flex">
+				<li class="nav-item"><a href="#" class="nav-link">about</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">portfolio</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">quote</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">products</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">testimonial</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="bg-gradient">
+		<div class="container">
+			<div class="d-flex site-intro">
+				<img src="https://placehold.co/80x50" alt="" class="site-img">
+				<h1 class="site-title">ИУ - Варна</h1>
+			</div>
+			<div class="d-flex slider">
+				<div class="left-arrow">
+					<a href="#">&#9664;</a>
+				</div>
+				<div class="main-slide">
+					<div class="slide-title">
+						Maecenas lorem blabla bangarnaga
+					</div>
+					<div class="slide-meta">
+						Posted by admin in on 09 30th, 2018| 2 comments
+					</div>
+					<div class="slide-text">
+						Pellentesque Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, commodi obcaecati! Aspernatur necessitatibus dolorum vel ab enim deleniti laboriosam, quia earum iure ad exercitationem mollitia amet ipsum, odio quos. Minus?
+					</div>
+				</div>
+				<div class="right-arrow">
+					<a href="#">&#9654;</a>
+				</div>
+			</div>
+			<div class="articles">
+				Popular articles
+			</div>
+		</div>
+	</div>
+</body>
+</html>

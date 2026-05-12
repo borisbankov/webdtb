@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		let task1 = () => {
+			for(let i = 0; i <= 10; i++){
+				console.log(i);
+			} 
+		}
+
+		// task1();
+
+		let task2 = () => {
+			let sum = '';
+			for(let i = 10; i >= 0; i--){
+				sum = sum + i + ' ';
+			} 
+			console.log(sum);
+		}
+
+		// task2();
+
+		let task3 = () => {
+			let word1 = prompt('word1:');
+			let word2 = prompt('word2:');
+
+			if(word1.length > word2.length){
+				console.log('dumata ' + word1 + ' e po-dylga')
+			} else if(word1.length < word2.length) {
+				console.log('dumata ', word2, ' e po-dylga')
+			} else {
+				console.log(`dumite ${word1} i ${word2} sa ednakvi dylgi`)
+			}
+		}
+
+		// task3();
+
+		let task4 = () => {
+			let n = prompt('chislo:');
+			let m = n+'';
+
+			// let temp = 0;
+			// while(n > 0){
+			// 	temp = n % 10;
+			// 	n = parseInt(n / 10);
+			// 	console.log(temp);
+			// }
+
+			for(let i = 0; i < m.length; i++){
+				console.log(m[i]);
+			}
+		}
+		// task4();
+
+
+		let task5 = () => {
+			let n = prompt('chislo:');
+
+			for(let i = 1; i <= n; i = i * 2){
+				console.log(i);
+			}
+		}
+
+		// task5();
+
+		let task6 = () => {
+			let n = prompt('vyvedete chisla:');
+			let sum = 0;
+			let arr = n.split(', ')
+			for (let i = 0; i < arr.length; i++) {
+				sum = sum + parseInt(arr[i]);
+			}
+			console.log(sum);
+		}
+
+		// task6();
+
+		let task7 = () => {
+			let h = parseInt(prompt("height:"));
+			let speedUp = parseInt(prompt("katerene:"));
+			let speedDown = parseInt(prompt("svli4ane:"));
+
+			let alreadyClimbed = speedUp;
+			let days = 1;
+
+			// while/for
+			while(alreadyClimbed < h){
+				alreadyClimbed = alreadyClimbed - speedDown;
+				days++;
+				alreadyClimbed = alreadyClimbed + speedUp;
+			}
+			console.log(days);
+		}
+
+		task7();
+	</script>
+</body>
+</html>

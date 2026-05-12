@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin:12px 16px;
+            color:white;
+        }
+        .nav{
+            padding:10px;
+        }
+        .page{
+            background-color: cadetblue;
+            width: 420px;
+        }
+ 
+        .page-2 {
+            background:royalblue;
+            width: 600px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            vertical-align: top;
+            margin:10px 0px;
+            padding:0px;
+        }
+        ul>li{ 
+            width:25%;
+            margin:0 8px;
+        }
+        .nav a{
+            text-decoration: none;
+            color: crimson;
+            display: inline-block;
+            border: 5px solid black;
+            background-color: cornsilk;
+            padding: 5px;
+        }
+        a:hover {
+            background-color: crimson;
+            color: cornsilk;
+        }
+        .columns{
+           display: flex;
+           flex-direction: row;
+        }
+        .lcol, .rcol{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin:0 8px;
+            width: 50%;
+        }
+        
+        .title{
+            margin: 12px 0px 12px 0px;
+            text-align: center;
+        }
+        .profile{
+            background-color: whitesmoke;
+            padding: 10px 90px 10px 10px;
+            display: inline-block;
+            margin: 20px 10px 20px 12px;
+        }
+        .p{
+            padding-bottom:12px;
+        }
+
+        .radius{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="nav">
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+                <li><a href="">Link 5</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <div class="lcol">
+                <div class="title">This is left column</div>
+                <div><img class="img" src="http://placehold.co/150x150" alt=""></div>
+            </div>
+            <div class="rcol">
+                <div class="title">This is right column</div>
+                <div><img class="img" src="http://placehold.co/150x150" alt=""></div>
+            </div>
+        </div>
+        <div class="p">
+            <div class="profile">
+                Вашето име, специаност, факултетен номер
+            </div>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Minima aut error corporis magnam perferendis ratione, quibusdam vel rerum soluta, vero maiores accusantium optio, minus numquam sequi iusto repudiandae incidunt, ad! </p>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Minima aut error corporis magnam perferendis ratione, quibusdam vel rerum soluta, vero maiores accusantium optio, minus numquam sequi iusto repudiandae incidunt, ad! </p>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Minima aut error corporis magnam perferendis ratione, quibusdam vel rerum soluta, vero maiores accusantium optio, minus numquam sequi iusto repudiandae incidunt, ad! </p>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Minima aut error corporis magnam perferendis ratione, quibusdam vel rerum soluta, vero maiores accusantium optio, minus numquam sequi iusto repudiandae incidunt, ad! </p>
+        </div>
+    </div>
+    <script>
+        
+        let zad1 = document.querySelectorAll('a');
+        zad1.forEach(item => {
+            console.log(item.innerText);
+        });
+
+        let zad2 = document.querySelectorAll('.title');
+        zad2.forEach(item => {
+            console.log(item.innerText);
+        });
+
+        let zad3 = document.querySelectorAll('p');
+        zad3.forEach(item => {
+            item.innerText = 'НОВ ПАРАГРАФ';
+        });
+
+        let zad4 = document.querySelectorAll('img');
+        zad4.forEach(item => {
+            console.log(item.src);
+            item.src = 'https://cataas.com/cat';
+            item.width = '150';
+        });
+
+        let zad6 = document.querySelectorAll('.columns > *');
+        zad6.forEach(item => {
+            console.log(item.className);
+            item.style.background = 'red';
+        });
+
+        let zad8 = document.querySelector('div.page');
+        zad8.classList.add('page-2');
+        zad8.classList.remove('page');
+
+        zad4.forEach(item => {
+            item.addEventListener('mouseenter', (e) => {
+                e.target.style.border = '5px solid gold';
+            });
+        });
+
+        let zad11 = document.querySelectorAll('a');
+        zad11.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.body.style.background = '#' + 
+                Math.floor(Math.random()*255*255*255).toString(16).padStart(6, '0'); 
+            });
+        });
+
+        zad3[0].style.display = 'none';
+        zad3[zad3.length - 1].style.display = 'none';
+        // pyrvo targetime elementite (ako sa mnogo) s querySelectorAll
+        // obhojdame gi s cikyl forEach arr.forEach(item => { 
+        // w cikyla pravim ne6to (napr. da sledim dali se kilka vyrhu tqh)
+        //      item.addEventListener('click', (e)=> {})
+        // })
+
+        let zad13 = document.querySelectorAll('*');
+        zad13.forEach(item => {
+            item.addEventListener('mouseover', (e) => {
+                e.target.classList.add('radius');
+            });
+            item.addEventListener('mouseout', (e) => {
+                e.target.classList.remove('radius');
+            });
+        });
+
+        // mouseenter i mouseleave
+        // mouseover i mouseout
+    </script>
+</body>
+</html>
